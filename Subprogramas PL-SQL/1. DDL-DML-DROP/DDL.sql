@@ -3,7 +3,7 @@
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
---Prueba Jorge
+--Prueba
 
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
 
