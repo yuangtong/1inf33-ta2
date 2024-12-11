@@ -3,7 +3,7 @@
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
-
+--Prueba Jorge
 
 -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
 
@@ -96,7 +96,7 @@ CREATE TABLE curso (
     asist_admin_id_asist_admin                  NUMBER NOT NULL,
     nro_horas                                   NUMBER NOT NULL,
     contenido                                   VARCHAR2(200) NOT NULL,
-    estado                                      VARCHAR2(10 BYTE) NOT NULL -- Nuevo atributo para marcar si el curso est· activo o inactivo
+    estado                                      VARCHAR2(10 BYTE) NOT NULL -- Nuevo atributo para marcar si el curso est√° activo o inactivo
 );
 
 CREATE UNIQUE INDEX curso__idxv1 ON
