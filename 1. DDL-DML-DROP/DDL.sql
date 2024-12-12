@@ -96,7 +96,7 @@ CREATE TABLE curso (
     asist_admin_id_asist_admin                  NUMBER NOT NULL,
     nro_horas                                   NUMBER NOT NULL,
     contenido                                   VARCHAR2(200) NOT NULL,
-    estado                                      VARCHAR2(10 BYTE) NOT NULL -- Nuevo atributo para marcar si el curso está activo o inactivo
+    estado                                      VARCHAR2(10 BYTE) NOT NULL -- Nuevo atributo para marcar si el curso estï¿½ activo o inactivo
 );
 
 CREATE UNIQUE INDEX curso__idxv1 ON
@@ -317,8 +317,10 @@ ALTER TABLE sesion ADD CONSTRAINT sesion_pk PRIMARY KEY ( id_sesion );
 CREATE TABLE sesion_participante (
     sesion_id_sesion             NUMBER NOT NULL,
     participante_id_participante NUMBER NOT NULL,
-    asistencia                   CHAR(1) NOT NULL
+    asistencia                   CHAR(1) NOT NULL,
+    opinion                      VARCHAR2(20 BYTE) -- Campo para registrar la opiniÃ³n del participante sobre el curso
 );
+
 
 ALTER TABLE sesion_participante ADD CONSTRAINT sesion_participante_pk PRIMARY KEY ( sesion_id_sesion,
                                                                                     participante_id_participante );

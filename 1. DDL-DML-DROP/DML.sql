@@ -10,16 +10,16 @@ VALUES (2, 'Licencia de Desarrollo ABC', 'Licencia para el desarrollo de aplicac
     'Desarrolladora DEF', 24, TO_DATE('2026-06-30', 'YYYY-MM-DD'));
 
 INSERT INTO licencia (id_licencia, nombre, describcion, titular, duracion, fecha_vencimiento)
-VALUES (3, 'Licencia de Capacitación LMN', 'Licencia para acceder a los módulos de capacitación en línea de la empresa LMN.',
-    'Institución GHI', 6, TO_DATE('2025-05-15', 'YYYY-MM-DD'));
+VALUES (3, 'Licencia de Capacitaciï¿½n LMN', 'Licencia para acceder a los mï¿½dulos de capacitaciï¿½n en lï¿½nea de la empresa LMN.',
+    'Instituciï¿½n GHI', 6, TO_DATE('2025-05-15', 'YYYY-MM-DD'));
 
 INSERT INTO licencia (id_licencia, nombre, describcion, titular, duracion, fecha_vencimiento)
 VALUES (4, 'Licencia Comercial RTP', 'Licencia para Software o hardware licenciado exclusivamente para integrarse en productos terminados.',
     'Empresa OFC', 12, TO_DATE('2025-11-07', 'YYYY-MM-DD'));
     
 INSERT INTO licencia (id_licencia, nombre, describcion, titular, duracion, fecha_vencimiento)
-VALUES (5, 'Licencia de Contenidos Educativos', 'Licencias abiertas que permiten el acceso libre a investigaciones y artículos científicos.',
-    'Institución GFDL', 24, TO_DATE('2026-06-08', 'YYYY-MM-DD'));
+VALUES (5, 'Licencia de Contenidos Educativos', 'Licencias abiertas que permiten el acceso libre a investigaciones y artï¿½culos cientï¿½ficos.',
+    'Instituciï¿½n GFDL', 24, TO_DATE('2026-06-08', 'YYYY-MM-DD'));
     
 -- MONEDA
 
@@ -31,10 +31,10 @@ INSERT INTO moneda (id_moneda, nombre) VALUES (5,'Pesos');
 
 -- TIPO
 
-INSERT INTO tipo (id_tipo, nombre) VALUES (1, 'Organización No Gubernamental');
+INSERT INTO tipo (id_tipo, nombre) VALUES (1, 'Organizaciï¿½n No Gubernamental');
 INSERT INTO tipo (id_tipo, nombre) VALUES (2, 'Empresa Estatal');
 INSERT INTO tipo (id_tipo, nombre) VALUES (3, 'Microempresa');
-INSERT INTO tipo (id_tipo, nombre) VALUES (4, 'Sociedad Anónima');
+INSERT INTO tipo (id_tipo, nombre) VALUES (4, 'Sociedad Anï¿½nima');
 INSERT INTO tipo (id_tipo, nombre) VALUES (5, 'Empresa Privada');
 
 -- TIPO_DOCUMENTO
@@ -45,38 +45,38 @@ INSERT INTO tipo_documento (id_tipo_documento, nombre) VALUES (3,'PASAPORTE');
 
 -- SECTOR
 
-INSERT INTO sector (id_sector, nombre, descripcion) VALUES (101, 'Tecnología', 'Empresas que desarrollan software, hardware y servicios tecnológicos.');
-INSERT INTO sector (id_sector, nombre, descripcion) VALUES (102, 'Construcción', 'Organizaciones dedicadas a la edificación de infraestructura y obras civiles.');
-INSERT INTO sector (id_sector, nombre, descripcion) VALUES (103, 'Finanzas', 'Instituciones que ofrecen servicios bancarios, seguros y gestión de inversiones.');
-INSERT INTO sector (id_sector, nombre, descripcion) VALUES (104, 'Salud', 'Entidades que proveen servicios médicos, hospitalarios y productos farmacéuticos.');
-INSERT INTO sector (id_sector, nombre, descripcion) VALUES (105, 'Educación', 'Instituciones que imparten formación académica y profesional.');
+INSERT INTO sector (id_sector, nombre, descripcion) VALUES (101, 'Tecnologï¿½a', 'Empresas que desarrollan software, hardware y servicios tecnolï¿½gicos.');
+INSERT INTO sector (id_sector, nombre, descripcion) VALUES (102, 'Construcciï¿½n', 'Organizaciones dedicadas a la edificaciï¿½n de infraestructura y obras civiles.');
+INSERT INTO sector (id_sector, nombre, descripcion) VALUES (103, 'Finanzas', 'Instituciones que ofrecen servicios bancarios, seguros y gestiï¿½n de inversiones.');
+INSERT INTO sector (id_sector, nombre, descripcion) VALUES (104, 'Salud', 'Entidades que proveen servicios mï¿½dicos, hospitalarios y productos farmacï¿½uticos.');
+INSERT INTO sector (id_sector, nombre, descripcion) VALUES (105, 'Educaciï¿½n', 'Instituciones que imparten formaciï¿½n acadï¿½mica y profesional.');
 
 
 -- PERSONA
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (1, 'Juan', 'Pérez', 'juan.perez@example.com', 'D', 1, '1234567890', '+34 612 345 678','INACTIVO');
+VALUES (1, 'Juan', 'Pï¿½rez', 'juan.perez@example.com', 'D', 1, '1234567890', '+34 612 345 678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (2, 'María', 'Gómez', 'maria.gomez@example.com', 'D', 2, '9876543210', '+1 416-555-0189','INACTIVO');
+VALUES (2, 'Marï¿½a', 'Gï¿½mez', 'maria.gomez@example.com', 'D', 2, '9876543210', '+1 416-555-0189','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (3, 'Carlos', 'López', 'carlos.lopez@example.com', 'D', 1, '1122334455', '+44 20 7946 0958','INACTIVO');
+VALUES (3, 'Carlos', 'Lï¿½pez', 'carlos.lopez@example.com', 'D', 1, '1122334455', '+44 20 7946 0958','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (4, 'Ana', 'Martínez', 'ana.martinez@example.com', 'D', 2, '6677889900', '+61 2 9876 5432','INACTIVO');
+VALUES (4, 'Ana', 'Martï¿½nez', 'ana.martinez@example.com', 'D', 2, '6677889900', '+61 2 9876 5432','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (5, 'Lucía', 'Fernández', 'lucia.fernandez@example.com', 'D', 1, '9988776655', '+39 06 1234 5678','INACTIVO');
+VALUES (5, 'Lucï¿½a', 'Fernï¿½ndez', 'lucia.fernandez@example.com', 'D', 1, '9988776655', '+39 06 1234 5678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (6, 'Pedro', 'Ramírez', 'pedro.ramirez@example.com', 'A', 3, '7766554433', '+52 55 1234 5678','INACTIVO');
+VALUES (6, 'Pedro', 'Ramï¿½rez', 'pedro.ramirez@example.com', 'A', 3, '7766554433', '+52 55 1234 5678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (7, 'Sofía', 'Hernández', 'sofia.hernandez@example.com', 'A', 1, '2233445566', '+57 1 2345678','INACTIVO');
+VALUES (7, 'Sofï¿½a', 'Hernï¿½ndez', 'sofia.hernandez@example.com', 'A', 1, '2233445566', '+57 1 2345678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (8, 'Diego', 'García', 'diego.garcia@example.com', 'A', 2, '3344556677', '+1 202-555-0198','INACTIVO');
+VALUES (8, 'Diego', 'Garcï¿½a', 'diego.garcia@example.com', 'A', 2, '3344556677', '+1 202-555-0198','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
 VALUES (9, 'Hugo', 'Reyes', 'hugo.reyes@example.com', 'A', 2, '1238456677', '+61 3 6123 4567','INACTIVO');
@@ -91,25 +91,25 @@ INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacio
 VALUES (12, 'Joaquin', 'Estrada', 'joaquin.estrada@example.com', 'C', 2, '3244345557', '+55 11 91234-5678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (13, 'Mariana', 'López', 'mariana.lopez@example.com', 'C', 1, '1029384756', '+86 138 1234 5678','INACTIVO');
+VALUES (13, 'Mariana', 'Lï¿½pez', 'mariana.lopez@example.com', 'C', 1, '1029384756', '+86 138 1234 5678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
 VALUES (14, 'Carlos', 'Mendoza', 'carlos.mendoza@example.com', 'C', 2, '2039485768', '+33 1 70 18 92 56','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (15, 'Lucía', 'Ramírez', 'lucia.ramirez@example.com', 'C', 3, '4213857890', '+81 90 1234 5678','INACTIVO');
+VALUES (15, 'Lucï¿½a', 'Ramï¿½rez', 'lucia.ramirez@example.com', 'C', 3, '4213857890', '+81 90 1234 5678','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (16, 'Andrés', 'García', 'andres.garcia@example.com', 'P', 1, '8765432109', '+7 495 123-45-67','INACTIVO');
+VALUES (16, 'Andrï¿½s', 'Garcï¿½a', 'andres.garcia@example.com', 'P', 1, '8765432109', '+7 495 123-45-67','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (17, 'Sofía', 'Castro', 'sofia.castro@example.com', 'P', 2, '7584936201', '+27 21 123 4567','INACTIVO');
+VALUES (17, 'Sofï¿½a', 'Castro', 'sofia.castro@example.com', 'P', 2, '7584936201', '+27 21 123 4567','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (18, 'Ricardo', 'Pérez', 'ricardo.perez@example.com', 'P', 3, '6543219870', '+52 55 6789 1234','INACTIVO');
+VALUES (18, 'Ricardo', 'Pï¿½rez', 'ricardo.perez@example.com', 'P', 3, '6543219870', '+52 55 6789 1234','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
-VALUES (19, 'Ana', 'Hernández', 'ana.hernandez@example.com', 'P', 1, '3948571026', '+34 623 456 789','INACTIVO');
+VALUES (19, 'Ana', 'Hernï¿½ndez', 'ana.hernandez@example.com', 'P', 1, '3948571026', '+34 623 456 789','INACTIVO');
 
 INSERT INTO persona (id_persona, nombre, apellidos, correo_electronico, ocupacion, tipo_doc_id_tipo_doc, numero_documento, telefono_contacto, estado)
 VALUES (20, 'Javier', 'Ortiz', 'javier.ortiz@example.com', 'P', 2, '9485761032', '+39 06 8765 4321','INACTIVO');
@@ -142,24 +142,24 @@ INSERT INTO coordinador_academico (id_coord_acad, id_persona) VALUES (5, 15);
 -- AREA_ESPECIALIZACION
 
 INSERT INTO area_especializacion (id_area_esp, nombre, describcion, nivel_esp, institucion, fecha_otorgada, reconocimientos, docente_id_docente)
-VALUES (1, 'Inteligencia Artificial', 'Estudio avanzado de algoritmos de aprendizaje automático y procesamiento de lenguaje natural.',
-    'Máster', 'Universidad Nacional', TO_DATE('2020-06-15', 'YYYY-MM-DD'), 'Certificado por publicaciones en conferencias internacionales.',1);
+VALUES (1, 'Inteligencia Artificial', 'Estudio avanzado de algoritmos de aprendizaje automï¿½tico y procesamiento de lenguaje natural.',
+    'Mï¿½ster', 'Universidad Nacional', TO_DATE('2020-06-15', 'YYYY-MM-DD'), 'Certificado por publicaciones en conferencias internacionales.',1);
 
 INSERT INTO area_especializacion (id_area_esp, nombre, describcion, nivel_esp, institucion, fecha_otorgada, reconocimientos, docente_id_docente)
-VALUES (2, 'Ciencia de Datos', 'Análisis y visualización de datos en grandes volúmenes utilizando herramientas modernas.','Diplomado', 'Instituto Tecnológico',
+VALUES (2, 'Ciencia de Datos', 'Anï¿½lisis y visualizaciï¿½n de datos en grandes volï¿½menes utilizando herramientas modernas.','Diplomado', 'Instituto Tecnolï¿½gico',
     TO_DATE('2021-11-20', 'YYYY-MM-DD'), 'Reconocido por proyectos destacados en la industria.',2);
     
 INSERT INTO area_especializacion (id_area_esp, nombre, describcion, nivel_esp, institucion, fecha_otorgada, reconocimientos, docente_id_docente)
-VALUES (3, 'Ciberseguridad', 'Implementación de sistemas de seguridad para proteger redes e información.', 'Diplomado', 'Centro de Estudios Avanzados', 
+VALUES (3, 'Ciberseguridad', 'Implementaciï¿½n de sistemas de seguridad para proteger redes e informaciï¿½n.', 'Diplomado', 'Centro de Estudios Avanzados', 
     TO_DATE('2020-09-10', 'YYYY-MM-DD'), 'Reconocimiento por contribuciones a protocolos seguros.', 3);
     
 INSERT INTO area_especializacion (id_area_esp, nombre, describcion, nivel_esp, institucion, fecha_otorgada, reconocimientos, docente_id_docente)
-VALUES (4, 'Big Data', 'Gestión de datos a gran escala utilizando tecnologías avanzadas.', 'Maestría', 'Instituto de Tecnología Digital', 
+VALUES (4, 'Big Data', 'Gestiï¿½n de datos a gran escala utilizando tecnologï¿½as avanzadas.', 'Maestrï¿½a', 'Instituto de Tecnologï¿½a Digital', 
     TO_DATE('2022-02-14', 'YYYY-MM-DD'), 'Reconocimiento por proyectos de alto impacto en la industria.', 4);
     
 INSERT INTO area_especializacion (id_area_esp, nombre, describcion, nivel_esp, institucion, fecha_otorgada, reconocimientos, docente_id_docente)
-VALUES (5, 'Desarrollo Web', 'Creación de aplicaciones web modernas y funcionales.', 'Diplomado', 'Academia de Desarrollo Avanzado', 
-    TO_DATE('2020-12-05', 'YYYY-MM-DD'), 'Mención honorífica por aplicaciones innovadoras.', 5);
+VALUES (5, 'Desarrollo Web', 'Creaciï¿½n de aplicaciones web modernas y funcionales.', 'Diplomado', 'Academia de Desarrollo Avanzado', 
+    TO_DATE('2020-12-05', 'YYYY-MM-DD'), 'Menciï¿½n honorï¿½fica por aplicaciones innovadoras.', 5);
 
 -- ENTIDAD
 
@@ -183,19 +183,19 @@ INSERT INTO entidad (
 -- GERENTE
 
 INSERT INTO gerente (id_gerente, nombres, apellidos, dni, cargo, correo_electronico, entidad_id_entidad)
-VALUES (1, 'Carlos', 'Pérez', '12345678', 'Gerente General', 'c.perez@empresa.com', 1);
+VALUES (1, 'Carlos', 'Pï¿½rez', '12345678', 'Gerente General', 'c.perez@empresa.com', 1);
 
 INSERT INTO gerente (id_gerente, nombres, apellidos, dni, cargo, correo_electronico, entidad_id_entidad)
-VALUES (2, 'Ana', 'Martínez', '23456789', 'Gerente de Finanzas', 'a.martinez@empresa.com', 2);
+VALUES (2, 'Ana', 'Martï¿½nez', '23456789', 'Gerente de Finanzas', 'a.martinez@empresa.com', 2);
 
 INSERT INTO gerente (id_gerente, nombres, apellidos, dni, cargo, correo_electronico, entidad_id_entidad)
-VALUES (3, 'Luis', 'González', '34567890', 'Gerente de Marketing', 'l.gonzalez@empresa.com', 3);
+VALUES (3, 'Luis', 'Gonzï¿½lez', '34567890', 'Gerente de Marketing', 'l.gonzalez@empresa.com', 3);
 
 INSERT INTO gerente (id_gerente, nombres, apellidos, dni, cargo, correo_electronico, entidad_id_entidad)
-VALUES (4, 'Jose', 'Ramírez', '56789012', 'Gerente de Operaciones', 'c.ramirez@empresa.com', 4);
+VALUES (4, 'Jose', 'Ramï¿½rez', '56789012', 'Gerente de Operaciones', 'c.ramirez@empresa.com', 4);
 
 INSERT INTO gerente (id_gerente, nombres, apellidos, dni, cargo, correo_electronico, entidad_id_entidad)
-VALUES (5, 'Lucía', 'Torres', '89012345', 'Gerente de Proyectos', 'l.torres@empresa.com', 5);
+VALUES (5, 'Lucï¿½a', 'Torres', '89012345', 'Gerente de Proyectos', 'l.torres@empresa.com', 5);
 
 
 -- CURRICULUM_VITAE
@@ -207,13 +207,13 @@ INSERT INTO curriculum_vitae (id_cv, fecha_creacion, cantidad_certificaciones, c
 VALUES (2, TO_DATE('2024-02-10', 'YYYY-MM-DD'), 3, 'Colegio de Analistas de Datos', 'Ciencia de Datos', 2, 2);
 
 INSERT INTO curriculum_vitae (id_cv, fecha_creacion, cantidad_certificaciones, colegiatura, area_especializacion, docente_id_docente, asist_admin_id_asist_admin)
-VALUES (3, TO_DATE('2023-11-15', 'YYYY-MM-DD'), 5, 'Colegio de Gestores de Proyectos', 'Ingeniería de Software', 3, 3);
+VALUES (3, TO_DATE('2023-11-15', 'YYYY-MM-DD'), 5, 'Colegio de Gestores de Proyectos', 'Ingenierï¿½a de Software', 3, 3);
 
 INSERT INTO curriculum_vitae (id_cv, fecha_creacion, cantidad_certificaciones, colegiatura, area_especializacion, docente_id_docente, asist_admin_id_asist_admin)
-VALUES (4, TO_DATE('2024-01-20', 'YYYY-MM-DD'), 2, 'Asociación de Ciberseguridad Global', 'Ciberseguridad', 4, 4);
+VALUES (4, TO_DATE('2024-01-20', 'YYYY-MM-DD'), 2, 'Asociaciï¿½n de Ciberseguridad Global', 'Ciberseguridad', 4, 4);
 
 INSERT INTO curriculum_vitae (id_cv, fecha_creacion, cantidad_certificaciones, colegiatura, area_especializacion, docente_id_docente, asist_admin_id_asist_admin)
-VALUES (5, TO_DATE('2023-06-10', 'YYYY-MM-DD'), 4, 'Asociación de Big Data e Innovación', 'Big Data', 5, 5);
+VALUES (5, TO_DATE('2023-06-10', 'YYYY-MM-DD'), 4, 'Asociaciï¿½n de Big Data e Innovaciï¿½n', 'Big Data', 5, 5);
 
 -- EXPERIENCIA_LABORAL
 
@@ -235,43 +235,43 @@ VALUES (5, TO_DATE('2015-08-01', 'YYYY-MM-DD'), TO_DATE('2020-12-10', 'YYYY-MM-D
 -- CERTIFICADO_PROFESIONAL
 
 INSERT INTO certificado_profesional (id_cert_prof, nombre, especializacion, curriculum_vitae_id_cv)
-VALUES (1, 'Certificación en Machine Learning', 'Uso de algoritmos avanzados para el aprendizaje automático en grandes conjuntos de datos.', 1);
+VALUES (1, 'Certificaciï¿½n en Machine Learning', 'Uso de algoritmos avanzados para el aprendizaje automï¿½tico en grandes conjuntos de datos.', 1);
 
 INSERT INTO certificado_profesional (id_cert_prof, nombre, especializacion, curriculum_vitae_id_cv)
-VALUES (2, 'Certificación en Big Data', 'Análisis y gestión de grandes volúmenes de datos utilizando herramientas como Hadoop y Spark.',2);
+VALUES (2, 'Certificaciï¿½n en Big Data', 'Anï¿½lisis y gestiï¿½n de grandes volï¿½menes de datos utilizando herramientas como Hadoop y Spark.',2);
 
 INSERT INTO certificado_profesional (id_cert_prof, nombre, especializacion, curriculum_vitae_id_cv)
-VALUES (3, 'Certificación en Visualización de Datos', 'Creación de dashboards interINACTIVOs y análisis visual con Power BI y Tableau.',3);
+VALUES (3, 'Certificaciï¿½n en Visualizaciï¿½n de Datos', 'Creaciï¿½n de dashboards interINACTIVOs y anï¿½lisis visual con Power BI y Tableau.',3);
 
 INSERT INTO certificado_profesional (id_cert_prof, nombre, especializacion, curriculum_vitae_id_cv)
-VALUES (4, 'Certificación en Estadística Avanzada', 'Métodos avanzados de inferencia estadística y modelado predictivo.',4);
+VALUES (4, 'Certificaciï¿½n en Estadï¿½stica Avanzada', 'Mï¿½todos avanzados de inferencia estadï¿½stica y modelado predictivo.',4);
 
 INSERT INTO certificado_profesional (id_cert_prof, nombre, especializacion, curriculum_vitae_id_cv)
-VALUES (5, 'Certificación en Inteligencia Artificial', 'Redes neuronales, aprendizaje supervisado y no supervisado.', 5);
+VALUES (5, 'Certificaciï¿½n en Inteligencia Artificial', 'Redes neuronales, aprendizaje supervisado y no supervisado.', 5);
 
 
 -- PROPUESTA
 
 INSERT INTO PROPUESTA (id_propuesta, descripcion, material_complementario, moneda_id_moneda, precio, fecha_envio, area_esp_docente, estado)
-VALUES (1, 'Propuesta para curso de desarrollo web para empleados', 'Manual de Desarrollo Web, Licencia de Software', 1, 15000.00, DATE '2024-10-10', 'Programación Web', 1);
+VALUES (1, 'Propuesta para curso de desarrollo web para empleados', 'Manual de Desarrollo Web, Licencia de Software', 1, 15000.00, DATE '2024-10-10', 'Programaciï¿½n Web', 1);
 
 INSERT INTO propuesta (id_propuesta, descripcion, material_complementario, moneda_id_moneda, precio, fecha_envio, area_esp_docente, estado)
-VALUES (2, 'Propuesta para taller de ciberseguridad empresarial', 'Guía de Seguridad en Redes, Acceso a Laboratorio Virtual', 2, 18000.00, DATE '2024-11-05', 'Ciberseguridad', 1);
+VALUES (2, 'Propuesta para taller de ciberseguridad empresarial', 'Guï¿½a de Seguridad en Redes, Acceso a Laboratorio Virtual', 2, 18000.00, DATE '2024-11-05', 'Ciberseguridad', 1);
 
 INSERT INTO propuesta (id_propuesta, descripcion, material_complementario, moneda_id_moneda, precio, fecha_envio, area_esp_docente, estado)
-VALUES (3, 'Propuesta para capacitación en análisis de datos avanzados', 'Conjunto de Datos de Práctica, Licencia de Software', 1, 20000.00, DATE '2024-09-20', 'Análisis de Datos', 1);
+VALUES (3, 'Propuesta para capacitaciï¿½n en anï¿½lisis de datos avanzados', 'Conjunto de Datos de Prï¿½ctica, Licencia de Software', 1, 20000.00, DATE '2024-09-20', 'Anï¿½lisis de Datos', 1);
 
 INSERT INTO propuesta (id_propuesta, descripcion, material_complementario, moneda_id_moneda, precio, fecha_envio, area_esp_docente, estado)
-VALUES (4, 'Propuesta para curso de inteligencia artificial aplicada', 'Licencia de Herramientas de IA, Material Didáctico', 3, 25000.00, DATE '2024-08-15', 'Inteligencia Artificial', 1);
+VALUES (4, 'Propuesta para curso de inteligencia artificial aplicada', 'Licencia de Herramientas de IA, Material Didï¿½ctico', 3, 25000.00, DATE '2024-08-15', 'Inteligencia Artificial', 1);
 
 INSERT INTO propuesta (id_propuesta, descripcion, material_complementario, moneda_id_moneda, precio, fecha_envio, area_esp_docente, estado)
-VALUES (5, 'Propuesta para proyecto de desarrollo de aplicaciones móviles', 'Documentación Técnica, Acceso a Recursos Online', 2, 30000.00, DATE '2024-07-30', 'Desarrollo Móvil', 1);
+VALUES (5, 'Propuesta para proyecto de desarrollo de aplicaciones mï¿½viles', 'Documentaciï¿½n Tï¿½cnica, Acceso a Recursos Online', 2, 30000.00, DATE '2024-07-30', 'Desarrollo Mï¿½vil', 1);
 
 -- LICITACIONES
 
 INSERT INTO LICITACION (id_licitacion, nombre, fecha_publicacion, fecha_limite, tematica_cursos, cantidad_horas, cantidad_participantes, monto_base, area_esp_doc,
 modalidad_curso, entidad_id_entidad, propuesta_id_propuesta, moneda_id_moneda) VALUES
-(1,'Licitacion 1',DATE '2024-10-14',DATE '2024-11-14','Desarrollo web',24,15,26712,'Programación Frontend y Backend','V',4,1,1);
+(1,'Licitacion 1',DATE '2024-10-14',DATE '2024-11-14','Desarrollo web',24,15,26712,'Programaciï¿½n Frontend y Backend','V',4,1,1);
 
 INSERT INTO licitacion (id_licitacion, nombre, fecha_publicacion, fecha_limite, tematica_cursos, cantidad_horas, cantidad_participantes, monto_base, area_esp_doc, 
 modalidad_curso, entidad_id_entidad, propuesta_id_propuesta, moneda_id_moneda) 
@@ -279,39 +279,40 @@ VALUES (2, 'Licitacion 2', DATE '2024-09-10', DATE '2024-10-10', 'Ciberseguridad
 
 INSERT INTO licitacion (id_licitacion, nombre, fecha_publicacion, fecha_limite, tematica_cursos, cantidad_horas, cantidad_participantes, monto_base, area_esp_doc, 
 modalidad_curso, entidad_id_entidad, propuesta_id_propuesta, moneda_id_moneda) 
-VALUES (3, 'Licitacion 3', DATE '2024-08-01', DATE '2024-09-01', 'Big Data', 40, 25, 45000, 'Análisis de Datos Masivos', 'V', 3, 3, 1);
+VALUES (3, 'Licitacion 3', DATE '2024-08-01', DATE '2024-09-01', 'Big Data', 40, 25, 45000, 'Anï¿½lisis de Datos Masivos', 'V', 3, 3, 1);
 
 INSERT INTO licitacion (id_licitacion, nombre, fecha_publicacion, fecha_limite, tematica_cursos, cantidad_horas, cantidad_participantes, monto_base, area_esp_doc, 
 modalidad_curso, entidad_id_entidad, propuesta_id_propuesta, moneda_id_moneda) 
-VALUES (4, 'Licitacion 4', DATE '2024-07-15', DATE '2024-08-15', 'Inteligencia Artificial', 35, 18, 38000, 'Aprendizaje Automático', 'P', 2, 4, 3);
+VALUES (4, 'Licitacion 4', DATE '2024-07-15', DATE '2024-08-15', 'Inteligencia Artificial', 35, 18, 38000, 'Aprendizaje Automï¿½tico', 'P', 2, 4, 3);
 
 INSERT INTO licitacion (id_licitacion, nombre, fecha_publicacion, fecha_limite, tematica_cursos, cantidad_horas, cantidad_participantes, monto_base, area_esp_doc, 
 modalidad_curso, entidad_id_entidad, propuesta_id_propuesta, moneda_id_moneda) 
-VALUES (5, 'Licitacion 5', DATE '2024-06-20', DATE '2024-07-20', 'Desarrollo de Aplicaciones Móviles', 28, 22, 30000, 'Programación en iOS y Android', 'V', 2, 5, 1);
+VALUES (5, 'Licitacion 5', DATE '2024-06-20', DATE '2024-07-20', 'Desarrollo de Aplicaciones Mï¿½viles', 28, 22, 30000, 'Programaciï¿½n en iOS y Android', 'V', 2, 5, 1);
 
 -- CURSO
 INSERT INTO curso (id_curso, nombre, modalidad, propuesta_id_propuesta, coord_acad_id_coord_acad, asist_admin_id_asist_admin, nro_horas, contenido, estado)
-VALUES (1, 'Introducción a la Programación Web', 'P', 1, 1, 1, 40, 'Fundamentos de programación web.', 'INACTIVO');
+VALUES (1, 'Introducciï¿½n a la Programaciï¿½n Web', 'P', 1, 1, 1, 40, 'Fundamentos de programaciï¿½n web.', 'INACTIVO');
 
 INSERT INTO curso (id_curso, nombre, modalidad, propuesta_id_propuesta, coord_acad_id_coord_acad, asist_admin_id_asist_admin, nro_horas, contenido, estado)
-VALUES (2, 'Ciberseguridad Básica', 'V', 2, 2, 2, 30, 'Conceptos clave de seguridad informática y redes.', 'INACTIVO');
+VALUES (2, 'Ciberseguridad Bï¿½sica', 'V', 2, 2, 2, 30, 'Conceptos clave de seguridad informï¿½tica y redes.', 'INACTIVO');
 
 INSERT INTO curso (id_curso, nombre, modalidad, propuesta_id_propuesta, coord_acad_id_coord_acad, asist_admin_id_asist_admin, nro_horas, contenido, estado)
-VALUES (3, 'Análisis de Datos Avanzado', 'H', 3, 3, 3, 45, 'Técnicas de análisis predictivo y manejo de grandes volúmenes de datos.', 'INACTIVO');
+VALUES (3, 'Anï¿½lisis de Datos Avanzado', 'H', 3, 3, 3, 45, 'Tï¿½cnicas de anï¿½lisis predictivo y manejo de grandes volï¿½menes de datos.', 'INACTIVO');
 
 INSERT INTO curso (id_curso, nombre, modalidad, propuesta_id_propuesta, coord_acad_id_coord_acad, asist_admin_id_asist_admin, nro_horas, contenido, estado)
-VALUES (4, 'Desarrollo de Aplicaciones Móviles', 'P', 4, 4, 4, 50, 'Creación de aplicaciones móviles con Android e iOS.', 'INACTIVO');
+VALUES (4, 'Desarrollo de Aplicaciones Mï¿½viles', 'P', 4, 4, 4, 50, 'Creaciï¿½n de aplicaciones mï¿½viles con Android e iOS.', 'INACTIVO');
 
 INSERT INTO curso (id_curso, nombre, modalidad, propuesta_id_propuesta, coord_acad_id_coord_acad, asist_admin_id_asist_admin, nro_horas, contenido, estado)
-VALUES (5, 'Inteligencia Artificial Aplicada', 'V', 5, 5, 5, 35, 'Introducción a aprendizaje supervisado y redes neuronales.', 'INACTIVO');
+VALUES (5, 'Inteligencia Artificial Aplicada', 'V', 5, 5, 5, 35, 'Introducciï¿½n a aprendizaje supervisado y redes neuronales.', 'INACTIVO');
 
 -- PARTICIPANTE
 
-INSERT INTO participante (id_participante, curso_id_curso, id_persona) VALUES (1, 1, 16);
-INSERT INTO participante (id_participante, curso_id_curso, id_persona) VALUES (2, 2, 17);
-INSERT INTO participante (id_participante, curso_id_curso, id_persona) VALUES (3, 3, 18);
-INSERT INTO participante (id_participante, curso_id_curso, id_persona) VALUES (4, 4, 19);
-INSERT INTO participante (id_participante, curso_id_curso, id_persona) VALUES (5, 5, 20);
+INSERT INTO participante (id_participante, curso_id_curso, id_persona, opinion) VALUES (1, 1, 16, NULL);
+INSERT INTO participante (id_participante, curso_id_curso, id_persona, opinion) VALUES (2, 2, 17, NULL);
+INSERT INTO participante (id_participante, curso_id_curso, id_persona, opinion) VALUES (3, 3, 18, NULL);
+INSERT INTO participante (id_participante, curso_id_curso, id_persona, opinion) VALUES (4, 4, 19, NULL);
+INSERT INTO participante (id_participante, curso_id_curso, id_persona, opinion) VALUES (5, 5, 20, NULL);
+
 
 -- CURSO_DOCENTE
 
@@ -322,13 +323,13 @@ INSERT INTO curso_docente (curso_id_curso, docente_id_docente, fecha_inicio, fec
 VALUES (1, 2, TO_DATE('2024-02-16', 'YYYY-MM-DD'), TO_DATE('2024-03-20', 'YYYY-MM-DD'));
 
 INSERT INTO curso_docente (curso_id_curso, docente_id_docente, fecha_inicio, fecha_fin)
-VALUES (2, 2, TO_DATE('2024-03-01', 'YYYY-MM-DD'), TO_DATE('2024-04-05', 'YYYY-MM-DD'));
+VALUES (2, 2, TO_DATE('2024-03-24', 'YYYY-MM-DD'), TO_DATE('2024-04-25', 'YYYY-MM-DD'));
 
 INSERT INTO curso_docente (curso_id_curso, docente_id_docente, fecha_inicio, fecha_fin)
-VALUES (3, 1, TO_DATE('2024-03-01', 'YYYY-MM-DD'), TO_DATE('2024-04-05', 'YYYY-MM-DD'));
+VALUES (3, 1, TO_DATE('2024-03-15', 'YYYY-MM-DD'), TO_DATE('2024-04-25', 'YYYY-MM-DD'));
 
 INSERT INTO curso_docente (curso_id_curso, docente_id_docente, fecha_inicio, fecha_fin)
-VALUES (3, 3, TO_DATE('2024-02-15', 'YYYY-MM-DD'), TO_DATE('2024-03-20', 'YYYY-MM-DD'));
+VALUES (3, 3, TO_DATE('2024-02-01', 'YYYY-MM-DD'), TO_DATE('2024-03-10', 'YYYY-MM-DD'));
 
 INSERT INTO curso_docente (curso_id_curso, docente_id_docente, fecha_inicio, fecha_fin)
 VALUES (4, 4, TO_DATE('2024-04-10', 'YYYY-MM-DD'), TO_DATE('2024-05-15', 'YYYY-MM-DD'));
@@ -345,46 +346,46 @@ VALUES (2, 3, TO_DATE('2024-02-15', 'YYYY-MM-DD'), TO_DATE('2024-03-20', 'YYYY-M
 -- IDIOMA
 
 INSERT INTO idioma (id_idioma, nombre, grado, certificado, curso_id_curso, curriculum_vitae_id_cv)
-VALUES (1, 'Inglés', 'B2', 'Certificado por la Universidad de Cambridge', 1, 1);
+VALUES (1, 'Inglï¿½s', 'B2', 'Certificado por la Universidad de Cambridge', 1, 1);
 
 INSERT INTO idioma (id_idioma, nombre, grado, certificado, curso_id_curso, curriculum_vitae_id_cv)
-VALUES (2, 'Francés', 'C1', 'Certificado DELF C1', 2, 2);
+VALUES (2, 'Francï¿½s', 'C1', 'Certificado DELF C1', 2, 2);
 
 INSERT INTO idioma (id_idioma, nombre, grado, certificado, curso_id_curso, curriculum_vitae_id_cv)
-VALUES (3, 'Alemán', 'B1', 'Goethe-Zertifikat B1', 3, 3);
+VALUES (3, 'Alemï¿½n', 'B1', 'Goethe-Zertifikat B1', 3, 3);
 
 INSERT INTO idioma (id_idioma, nombre, grado, certificado, curso_id_curso, curriculum_vitae_id_cv)
 VALUES (4, 'Italiano', 'A2', 'Certificado PLIDA A2', 4, 4);
 
 INSERT INTO idioma (id_idioma, nombre, grado, certificado, curso_id_curso, curriculum_vitae_id_cv)
-VALUES (5, 'Portugués', 'B2', 'Certificado CELPE-Bras', 5, 5);
+VALUES (5, 'Portuguï¿½s', 'B2', 'Certificado CELPE-Bras', 5, 5);
 
 -- INFORME_FINAL
 
 INSERT INTO informe_final (id_informe_final, fecha_creacion, temas_trabajados, metodologia_utilizada, conclusiones, sugerencias, horas_dictadas,
     numero_aprobados, numero_desaprobados, numero_retirados, numero_cert_emit, coord_acad_id_coord_acad, curso_id_curso, gerente_id_gerente)
-VALUES (1, TO_DATE('2024-11-01', 'YYYY-MM-DD'), 'Introducción a la programación, estructuras de datos', 'Clases teóricas y ejercicios prácticos', 
-    'Los estudiantes dominaron los conceptos básicos de programación.', 'Se recomienda más tiempo de práctica en programación.', 40, 25, 5, 2, 25, 1, 1, 1);
+VALUES (1, TO_DATE('2024-11-01', 'YYYY-MM-DD'), 'Introducciï¿½n a la programaciï¿½n, estructuras de datos', 'Clases teï¿½ricas y ejercicios prï¿½cticos', 
+    'Los estudiantes dominaron los conceptos bï¿½sicos de programaciï¿½n.', 'Se recomienda mï¿½s tiempo de prï¿½ctica en programaciï¿½n.', 40, 25, 5, 2, 25, 1, 1, 1);
 
 INSERT INTO informe_final (id_informe_final, fecha_creacion, temas_trabajados, metodologia_utilizada, conclusiones, sugerencias, horas_dictadas,
     numero_aprobados, numero_desaprobados, numero_retirados, numero_cert_emit, coord_acad_id_coord_acad, curso_id_curso, gerente_id_gerente)
 VALUES (2, TO_DATE('2024-11-15', 'YYYY-MM-DD'), 'Bases de datos, SQL avanzado', 'Clases magistrales, laboratorio de consultas', 
-    'Los participantes adquirieron habilidades en manejo avanzado de bases de datos.', 'Se sugiere incluir más ejercicios prácticos con SQL.', 35, 20, 3, 1, 15, 2, 2, 2);
+    'Los participantes adquirieron habilidades en manejo avanzado de bases de datos.', 'Se sugiere incluir mï¿½s ejercicios prï¿½cticos con SQL.', 35, 20, 3, 1, 15, 2, 2, 2);
 
 INSERT INTO informe_final (id_informe_final, fecha_creacion, temas_trabajados, metodologia_utilizada, conclusiones, sugerencias, horas_dictadas,
     numero_aprobados, numero_desaprobados, numero_retirados, numero_cert_emit, coord_acad_id_coord_acad, curso_id_curso, gerente_id_gerente)
-VALUES (3, TO_DATE('2024-10-20', 'YYYY-MM-DD'), 'Ciberseguridad, redes de protección', 'Simulaciones en laboratorio y estudios de casos', 
-    'Los estudiantes comprendieron los fundamentos de la ciberseguridad y su aplicación práctica.', 'Recomendaríamos más prácticas en ambientes controlados de redes.', 45, 22, 4, 3, 18, 3, 3, 3);
+VALUES (3, TO_DATE('2024-10-20', 'YYYY-MM-DD'), 'Ciberseguridad, redes de protecciï¿½n', 'Simulaciones en laboratorio y estudios de casos', 
+    'Los estudiantes comprendieron los fundamentos de la ciberseguridad y su aplicaciï¿½n prï¿½ctica.', 'Recomendarï¿½amos mï¿½s prï¿½cticas en ambientes controlados de redes.', 45, 22, 4, 3, 18, 3, 3, 3);
 
 INSERT INTO informe_final (id_informe_final, fecha_creacion, temas_trabajados, metodologia_utilizada, conclusiones, sugerencias, horas_dictadas,
     numero_aprobados, numero_desaprobados, numero_retirados, numero_cert_emit, coord_acad_id_coord_acad, curso_id_curso, gerente_id_gerente)
-VALUES (4, TO_DATE('2024-09-25', 'YYYY-MM-DD'), 'Programación en Python, análisis de datos', 'Clases prácticas y estudios de proyectos', 
-    'Los alumnos adquirieron competencia en análisis de datos con Python.', 'Aumentar las horas dedicadas al análisis de datos real.', 40, 28, 2, 1, 20, 4, 4, 4);
+VALUES (4, TO_DATE('2024-09-25', 'YYYY-MM-DD'), 'Programaciï¿½n en Python, anï¿½lisis de datos', 'Clases prï¿½cticas y estudios de proyectos', 
+    'Los alumnos adquirieron competencia en anï¿½lisis de datos con Python.', 'Aumentar las horas dedicadas al anï¿½lisis de datos real.', 40, 28, 2, 1, 20, 4, 4, 4);
 
 INSERT INTO informe_final (id_informe_final, fecha_creacion, temas_trabajados, metodologia_utilizada, conclusiones, sugerencias, horas_dictadas,
     numero_aprobados, numero_desaprobados, numero_retirados, numero_cert_emit, coord_acad_id_coord_acad, curso_id_curso, gerente_id_gerente)
-VALUES (5, TO_DATE('2024-08-10', 'YYYY-MM-DD'), 'Desarrollo de aplicaciones móviles', 'Clases teóricas y prácticas de programación', 
-    'Los estudiantes crearon aplicaciones móviles funcionales.', 'Se recomienda proporcionar más recursos para el desarrollo de aplicaciones reales.', 50, 30, 4, 2, 25, 5, 5, 5);
+VALUES (5, TO_DATE('2024-08-10', 'YYYY-MM-DD'), 'Desarrollo de aplicaciones mï¿½viles', 'Clases teï¿½ricas y prï¿½cticas de programaciï¿½n', 
+    'Los estudiantes crearon aplicaciones mï¿½viles funcionales.', 'Se recomienda proporcionar mï¿½s recursos para el desarrollo de aplicaciones reales.', 50, 30, 4, 2, 25, 5, 5, 5);
     
 
 -- SEDE
@@ -411,28 +412,28 @@ VALUES (6, 'Sede Universidad', 'Calle Universitaria 10, Campus', 80, 2, 5);
 
 INSERT INTO certificado (id_certificado, nombre, codigo_qr, fecha_emision, descripcion, 
     participante_id_participante, participante_curso_id_curso, gerente_id_gerente) 
-VALUES (1, 'Certificado de Programación en Python', utl_raw.cast_to_raw('QR_CODE_DATA_1'), TO_DATE('2024-11-20', 'YYYY-MM-DD'), 
-    'Certificación en el curso de Programación en Python, aprobado con un puntaje del 85%.', 1, 1, 1);
+VALUES (1, 'Certificado de Programaciï¿½n en Python', utl_raw.cast_to_raw('QR_CODE_DATA_1'), TO_DATE('2024-11-20', 'YYYY-MM-DD'), 
+    'Certificaciï¿½n en el curso de Programaciï¿½n en Python, aprobado con un puntaje del 85%.', 1, 1, 1);
 
 INSERT INTO certificado (id_certificado, nombre, codigo_qr, fecha_emision, descripcion, 
     participante_id_participante, participante_curso_id_curso, gerente_id_gerente) 
 VALUES (2, 'Certificado en Desarrollo Web', utl_raw.cast_to_raw('QR_CODE_DATA_2'), TO_DATE('2024-11-25', 'YYYY-MM-DD'), 
-    'Certificación en el curso de Desarrollo Web, aprobado con un puntaje del 90%.', 2, 2, 2);
+    'Certificaciï¿½n en el curso de Desarrollo Web, aprobado con un puntaje del 90%.', 2, 2, 2);
 
 INSERT INTO certificado (id_certificado, nombre, codigo_qr, fecha_emision, descripcion, 
     participante_id_participante, participante_curso_id_curso, gerente_id_gerente) 
-VALUES (3, 'Certificado en Análisis de Datos', utl_raw.cast_to_raw('QR_CODE_DATA_3'), TO_DATE('2024-10-15', 'YYYY-MM-DD'), 
-    'Certificación en el curso de Análisis de Datos, aprobado con un puntaje del 88%.', 3, 3, 3);
+VALUES (3, 'Certificado en Anï¿½lisis de Datos', utl_raw.cast_to_raw('QR_CODE_DATA_3'), TO_DATE('2024-10-15', 'YYYY-MM-DD'), 
+    'Certificaciï¿½n en el curso de Anï¿½lisis de Datos, aprobado con un puntaje del 88%.', 3, 3, 3);
 
 INSERT INTO certificado (id_certificado, nombre, codigo_qr, fecha_emision, descripcion, 
     participante_id_participante, participante_curso_id_curso, gerente_id_gerente) 
 VALUES (4, 'Certificado en Marketing Digital', utl_raw.cast_to_raw('QR_CODE_DATA_4'), TO_DATE('2024-09-30', 'YYYY-MM-DD'), 
-    'Certificación en el curso de Marketing Digital, aprobado con un puntaje del 92%.', 4, 4, 4);
+    'Certificaciï¿½n en el curso de Marketing Digital, aprobado con un puntaje del 92%.', 4, 4, 4);
 
 INSERT INTO certificado (id_certificado, nombre, codigo_qr, fecha_emision, descripcion, 
     participante_id_participante, participante_curso_id_curso, gerente_id_gerente) 
 VALUES (5, 'Certificado en Ciberseguridad', utl_raw.cast_to_raw('QR_CODE_DATA_5'), TO_DATE('2024-08-25', 'YYYY-MM-DD'), 
-    'Certificación en el curso de Ciberseguridad, aprobado con un puntaje del 85%.', 5, 5, 5);
+    'Certificaciï¿½n en el curso de Ciberseguridad, aprobado con un puntaje del 85%.', 5, 5, 5);
 -- SEDE_LICENCIA
 
 INSERT INTO sede_licencia (sede_id_sede, licencia_id_licencia) VALUES (1, 1);
@@ -446,25 +447,124 @@ INSERT INTO sede_licencia (sede_id_sede, licencia_id_licencia) VALUES (4, 4);
 INSERT INTO sede_licencia (sede_id_sede, licencia_id_licencia) VALUES (5, 5);
 
 -- SESION
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (1, 1, TO_DATE('2024-01-10', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (2, 1, TO_DATE('2024-01-11', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (3, 1, TO_DATE('2024-01-12', 'YYYY-MM-DD'));
 
-INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (1, 1, TO_DATE('2024-11-15', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (4, 2, TO_DATE('2024-02-15', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (5, 2, TO_DATE('2024-02-16', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (6, 2, TO_DATE('2024-02-17', 'YYYY-MM-DD'));
 
-INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (2, 2, TO_DATE('2024-11-22', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (7, 3, TO_DATE('2024-02-01', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (8, 3, TO_DATE('2024-02-03', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (9, 3, TO_DATE('2024-02-06', 'YYYY-MM-DD'));
 
-INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (3, 3, TO_DATE('2024-11-18', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (10, 4, TO_DATE('2024-02-21', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (11, 4, TO_DATE('2024-02-24', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (12, 4, TO_DATE('2024-02-27', 'YYYY-MM-DD'));
 
-INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (4, 4, TO_DATE('2024-11-25', 'YYYY-MM-DD'));
-
-INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (5, 5, TO_DATE('2024-12-01', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (13, 5, TO_DATE('2024-05-01', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (14, 5, TO_DATE('2024-05-03', 'YYYY-MM-DD'));
+INSERT INTO sesion (id_sesion, curso_id_curso, fecha_sesion) VALUES (15, 5, TO_DATE('2024-05-05', 'YYYY-MM-DD'));
 
 -- SESION_PARTICIPANTE
 
 INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (1, 1, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (2, 1, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (3, 1, 'S');
 
-INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (2, 1, 'N');
-
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (1, 2, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (2, 2, 'S');
 INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (3, 2, 'S');
 
-INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (4, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (1, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (2, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (3, 3, 'S');
 
-INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (5, 4, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (1, 4, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (2, 4, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (3, 4, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (1, 5, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (2, 5, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (3, 5, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (4, 1, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (5, 1, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (6, 1, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (4, 2, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (5, 2, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (6, 2, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (4, 3, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (5, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (6, 3, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (4, 4, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (5, 4, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (6, 4, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (4, 5, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (5, 5, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (6, 5, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (7, 1, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (8, 1, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (9, 1, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (7, 2, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (8, 2, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (9, 2, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (7, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (8, 3, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (9, 3, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (7, 4, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (8, 4, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (9, 4, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (7, 5, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (8, 5, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (9, 5, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (10, 1, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (11, 1, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (12, 1, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (10, 2, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (11, 2, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (12, 2, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (10, 3, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (11, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (12, 3, 'N');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (10, 4, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (11, 4, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (12, 4, 'N');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (10, 5, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (11, 5, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (12, 5, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (13, 1, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (14, 1, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (15, 1, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (13, 2, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (14, 2, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (15, 2, 'S');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (13, 3, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (14, 3, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (15, 3, 'N');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (13, 4, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (14, 4, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (15, 4, 'N');
+
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (13, 5, 'N');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (14, 5, 'S');
+INSERT INTO sesion_participante (sesion_id_sesion, participante_id_participante, asistencia) VALUES (15, 5, 'N');
